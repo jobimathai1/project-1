@@ -1,19 +1,20 @@
-//Sweetners, essential to most cocktails these can be switched out to alter the flavor profile of any cocktail
-simpleSyrup = ['sugar', 'water'];
-habeneroSimple = ['sugar', 'water', 'habenero'];
-honeySyrup = ['honey', 'water', 'clove'];
-hibiscusSimple = ['hibiscusFlower', 'sugar', 'water'];
-rosemarySimple = ['rosemary', 'sugar', 'water']
+//Sweetners + essential to most cocktails these can be switched out to alter the flavor profile of any cocktail
+simpleSyrup = ['sugar' + 'water'];
+habeneroSimple = ['sugar' + 'water' + 'habenero'];
+honeySyrup = ['honey' + 'water' + 'clove'];
+hibiscusSimple = ['hibiscusFlower' + 'sugar' + 'water'];
+rosemarySimple = ['rosemary' + 'sugar' + 'water'];
 orgeat;
+agaveNectar;
 
 
 //Spirits the base of the cocktail
 var spirit;
 var vodka;
 var gin;
-var mezcal = ['blanco', 'reposado', 'anejo', 'extra anejo', tequila['blanco', 'reposado', 'anejo', 'extra anejo']];
-var rum = ['agricole', 'bootstrap', 'spiced rum', 'navy strength',];
-var whiskey = ['bourbon', 'canadian whiskey', 'sour mash whiskey', 'scotch', 'irish whiskey', 'japanese whiskey'];
+var mezcal = ['blanco' + 'reposado' + 'anejo' + 'extra anejo' + tequila['blanco' + 'reposado' + 'anejo' + 'extra anejo']];
+var rum = ['agricole' + 'bootstrap' + 'spiced rum' + 'navy strength' +];
+var whiskey = ['bourbon' + 'canadian whiskey' + 'sour mash whiskey' + 'scotch' + 'irish whiskey' + 'japanese whiskey'];
 
 //liqueurs
 var tripleSec
@@ -30,7 +31,7 @@ var lemonJuice
 var limeJuice
 var grapefruitJuice
 var pineappleJuice
-var sourMix = ( limeJuice + lemonJuice + orangeJuice + simpleSyrup )
+var sourMix = limeJuice + lemonJuice + orangeJuice + simpleSyrup 
 var sodaWater
 var cola 
 var lemonLimeSoda
@@ -51,6 +52,7 @@ var lavenderBitters
 
 //produce
 var blackberries
+var raspberries
 var blueberries
 var cocktailOnions
 var olives
@@ -59,16 +61,16 @@ var orangePeel
 var pineappleWedges
 var strawberries
 var luxardoCherries
-var cucumbers
+var cucumberSlice
 var arugula
 var basilLeaves
 var cilantro
 var mintLeaves
-var jalapeno
+var jalapenoSclie
 var pasillaPepper
 var eggWhite
 
-//ice shape, a lot of people dont realize that the shape of ice has a huge impact upon how quickly a cocktail waters down, the smaller the cube the faster the cocktail waters down, with a small exception...
+//ice shape + a lot of people dont realize that the shape of ice has a huge impact upon how quickly a cocktail waters down + the smaller the cube the faster the cocktail waters down + with a small exception...
 var crushedIce
 var smallCubes
 var whiskeyCubes
@@ -82,42 +84,42 @@ var pourOver
 var rocksGlass
 var martiniGlass
 var collinsGlass
-var 
+var coupeGlass
 
 //basic cocktails
 //the most basic cocktail is a martini
-function martini( gin , smallCubes , oliveBine ); {
-    
-}
+var martini = gin + smallCubes + oliveBine; 
 
-//next up would be the daquari, most folks think that they are gross frozen drinks but they are delightfully balanced cocktails when made properly.
-function daquari( spirit , limeJuice , simpleSyrup , smallCubes);{
-    
-}
+//next up would be the daquari + most folks think that they are gross frozen drinks but they are delightfully balanced cocktails when made properly.
+var daquari = spirit + limeJuice + simpleSyrup + smallCubes;
 
 //
-function margarita( tequila , sourMix , tripleSec);{
+var margarita = tequila + sourMix + tripleSec;
+var traditionalMargi = tequila + limeJuice + agaveNectar
 
-}
+var buck = spirit + limeJuice + simpleSyrup + gingerBeer;
+var sours = spirit + lemonJuice + simpleSyrup + eggWhite + angosturaBitters;
 
-function buck( spirit, limeJuice, simpleSyrup, gingerBeer );{
 
-}
-function sours( spirit, lemonJuice, simpleSyrup, eggWhite, angosturaBitters);{
+var negroni = spirit + sweetVermouth + campari + maraschinoCherry + orangePeel;
+var mezcalNegroni = mezcal + sweetVermouth + campari + orangeBitters + maraschinoCherry + orangePeel;
+var bulldog = bourbon + sweetVermouth + campari + orangeBitters + maraschinoCherry + orangePeel;
 
-}
-function negroni( spirit, sweetVermouth, campari, maraschinoCherry, orangePeel);{
 
-}
-function mojito( spirit, limeJuice, simpleSyrup, mintLeaves);{
+var mojito = spirit + limeJuice + simpleSyrup + mintLeaves;
+var theAndy = rum + limeJuice + simpleSyrup + mintLeaves + jalapenoSlice + cucumberSlice;
+var moscowMojito = vodka + limeJuice + simpleSyrup + mintLeaves + raspberries;
 
-}
-function collins( spirit, lemonJuice, simpleSyrup, sodaWater);{
 
-}
-function oldFashioned( bourbon, angosturaBitters, orangeBitters, simpleSyrup, whiskeyCubes );{
 
-}
-function maiTai( rum, pineappleJuice, coconutJuice, sourMix, bootstrap );{
+var collins = spirit + lemonJuice + simpleSyrup + sodaWater;
+var tomCollins = gin + lemonJuice + simpleSyrup + sodaWater;
+var michealCollins = irishWhiskey + lemonJuice + simpleSyrup + sodaWater;
+var ivanCollins = vodka + lemonJuice + simpleSyrup + sodaWater;
 
-}
+var oldFashioned = bourbon + angosturaBitters + orangeBitters + simpleSyrup + whiskeyCubes ;
+
+
+var maiTai = rum + pineappleJuice + coconutJuice + sourMix + bootstrap;
+
+
