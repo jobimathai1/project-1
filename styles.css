@@ -1,0 +1,243 @@
+body {
+    font-family: Arial, Helvetica, sans-serif ;
+    padding: 0;
+    margin: 0;
+    background-color: #faefef57
+}
+/*global*/
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+ul{
+    margin:0;
+    padding:0;
+}
+/*Input Button above the footer*/
+.button_1 {
+    height: 32px;
+    background: #08080893;
+    border: 0;
+    padding-left: 10px;
+    padding-right:20px;
+    color: #ffffff;
+/*Top Header*/
+}
+header {
+    background: #492410da;
+    color:#ffffffd7;
+    padding-top:10px;
+    min-height: 70px;
+    border-bottom: #140a03e1 3px solid;
+    text-align: right 20px;
+}
+/*Home Nav/Header Placement*/
+header a{
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+header ul{
+    margin:5px;
+    padding:5px;
+}
+header li {
+    float: right;
+    max-width: 300px; 
+    max-height: 300px;
+    display: inline;
+    padding: 0 20px 0 20px;
+    
+}
+header #branding {
+    float: left;
+}
+header #branding h1 {
+    margin: 0;
+}
+/*Home Nav*/
+header nav {
+    margin-top: 10px;
+}
+
+header .mark, header .current a{
+    columns: #531f10;
+    font-weight: bold;
+}
+
+header a:hover {
+    color: #2b1b13e1;
+    font-weight: bold;
+}
+/*Homepage Image(use Jquery to add slideshow Image)*/
+#slide{
+    border-radius: 25px;
+    margin-top: 15px;
+    border: solid 2px;
+    border-block-start: #08080893;
+    border-block-end: #000000ee;
+    text-align: center;
+    min-height: 500px;
+    background:url("./img/top-backgroundimg.jpg") center no-repeat;
+    color: #1a0e08de;
+
+}
+
+/* page titles*/
+h3 {
+    text-align: center;
+
+}
+
+
+#slide h1 {
+    margin-top: 100px;
+    font-size:55px;
+    margin-bottom: 50px;
+}
+/*Search Input*/
+#newsletter {
+    padding: 10px;
+    color: black;
+    background: #ffffff;
+}
+
+#newsletter h1 {
+    float: left;
+}
+
+#newsletter form {
+    float: right;
+    margin-top: 15px;
+}
+
+#newsletter input[type="email"] {
+    padding: 2px;
+    height: 25px;
+    width: 250px;
+}
+/*Drink Images*/
+#boxes{
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 5%;
+}
+#boxes .box{
+    float: left;
+    margin-right: 2.99%;
+    height: 15%;
+    width:30%;
+    padding: 0px;
+    text-align: center bottom;
+}
+
+#boxes .box img{
+    width: 100px;
+}
+/*Quick Links to Outside websites regarding ours*/
+.contactRightBox {
+    
+    margin: auto;
+    padding: 0;
+    overflow: hidden;
+    height: auto;
+    width: auto;
+    list-style-type: none;
+    margin: 0;
+    overflow: hidden;
+
+}
+    .fa {
+        float: right;
+        padding: 20px;
+        font-size: 30px;
+        width: 34px;
+        height: auto;
+        text-align: center;
+        text-decoration: none;
+        margin-bottom: 10px;
+        height: auto;
+        margin: auto;     
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+.fa-youtube {
+    background: #bb0000;
+    color: white;
+  }
+  .fa-google {
+    background: #dd4b39;
+    color: white;
+  }
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  .fa-reddit {
+    background: #ff5700;
+    color: white;
+  }  
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+/*Footer*/
+
+footer{
+    margin-top: 10px;
+    color: white;
+    background: #793c1cc9 10px;
+    text-align: center;
+    padding: 5px;
+}
+/*Side Navagation Bar*/
+.sideNavBar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(43, 41, 41);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 50px;
+}
+
+.sideNavBar a {
+    padding: 10px 8px 10px 32px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #793c1cc9;
+    display: block;
+    transition: 0.6s;
+}
+
+.sideNavBar a:hover {
+    color: #949090;
+}
+
+.sideNavBar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 30px;
+    margin-left: 45px;
+}
+
+@media screen and (max-height: 350px) {
+  .sideNavBar {padding-top: 15px;}
+  .sideNavBar a {font-size: 18px;}
+}
+
