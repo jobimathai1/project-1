@@ -86,14 +86,6 @@ header a:hover {
     color: #1a0e08de;
 
 }
-
-/* page titles*/
-h3 {
-    text-align: center;
-
-}
-
-
 #slide h1 {
     margin-top: 100px;
     font-size:55px;
@@ -196,10 +188,9 @@ h3 {
 
 footer{
     margin-top: 10px;
-    color: white;
+    color: #000000ee;
     background: #793c1cc9 10px;
     text-align: center;
-    padding: 5px;
 }
 /*Side Navagation Bar*/
 .sideNavBar {
