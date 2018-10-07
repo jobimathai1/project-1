@@ -1,0 +1,10 @@
+/* --- STYLES FOR ALL PAGES --- */
+
+body {
+    /* Typography */
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+.logo {
+    padding-right: 50px;
+}
+
