@@ -8,8 +8,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="reset.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="styles.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css\styles.css" />
 
     <!-- Bootstrap carousel -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -47,11 +46,11 @@
             </div>
 
             <!--Nav-->
-            <nav class="navbar navbar-expand-md navbar-light fixed-top bg-light">
+            <nav class="navbar navbar-default navbar-nav navbar-expand-md navbar-light fixed-top">
                 <!--logo-->
-                
-                <img class="logo" src=C:\Users\Beverly\OneDrive\Desktop\BOOTCAMP\UCLAWES201808FSF3\project-1\project-1\images\logo.gif
-                    width="100" height="100" alt="Pet Pride" class="d-inline-block align-top" Bootstrap>
+
+                <img class="logo" src="images/logo.png" alt="Pet Pride" class="d-inline-block align-top"
+                    Bootstrap>
 
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
                     aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -60,17 +59,16 @@
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item active">
-                            <a class="nav-link" href=index.html>Home <span class="sr-only">(current)</span></a>
+                         <a class="nav-link" href=index.html>Home <span class="sr-only">(current)</span></a>
                         </li>
+                        <li class="navbar-default nav-item">
+                            <button class="btn btn-outline-success nav-link" type="button" href=about.html>About Us</button></li>
                         <li class="nav-item">
-                            <a class="nav-link" href=about.html>About Us</a></li>
+                            <button class="btn btn-outline-success nav-link" type="button" href=programs.html>Programs</button></li>
                         <li class="nav-item">
-                            <a class="nav-link" href=programs.html>Programs</a></li>
+                            <button class="btn btn-outline-success nav-link" type="button" href=donations.html>Donations</button></li>
                         <li class="nav-item">
-                            <a class="nav-link" href=mailingList.html>Mailing List</a></li>
-                        <li class="nav-item">
-                            <a class="nav-link" href=contact.html>Contact Us</a></li>
-
+                            <button class="btn btn-outline-success nav-link" type="button" href=mailingList.html>Mailing List</button></li>
                     </ul>
                     <form class="form-inline mt-2 mt-md-0">
                         <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
@@ -80,11 +78,14 @@
             </nav>
         </header>
 
+
+                  <button class="btn btn-outline-success" type="button">Main button</button>
+
         <!--Main section-->
         <main role="main">
 
             <!--Carousel-->
-            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <div id="myCarousel" class="carousel-slide" data-ride="carousel">
                 <ol class="carousel-indicators">
                     <li data-target="#myCarousel" data-slide-to="0" class=""></li>
                     <li data-target="#myCarousel" data-slide-to="1" class="active"></li>
@@ -92,8 +93,7 @@
                 </ol>
                 <div class="carousel-inner">
                     <div class="carousel-item">
-                        <img class="first-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=="
-                            alt="First slide">
+                        <img class="first-slide" src="images/HandsomeJack1.jpg" alt="First slide">
                         <div class="container">
                             <div class="carousel-caption text-left">
                                 <h1>Pet Pride</h1>
@@ -104,8 +104,7 @@
                         </div>
                     </div>
                     <div class="carousel-item active">
-                        <img class="second-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=="
-                            alt="Second slide">
+                        <img class="second-slide" src="images/HandsomeJack2.jpg" alt = "Second slide">
                         <div class="container">
                             <div class="carousel-caption">
                                 <h1>Another example headline.</h1>
@@ -116,8 +115,7 @@
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img class="third-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=="
-                            alt="Third slide">
+                        <img class="third-slide" src="images/Rocco1.jpg" alt="Third slide">
                         <div class="container">
                             <div class="carousel-caption text-right">
                                 <h1>One more for good measure.</h1>
@@ -139,35 +137,38 @@
             </div>
 
             <!-- Article section -->
-            <div class="container marketing">
+            <div class="container-marketing">
 
                 <!-- Three columns of text below the carousel -->
                 <div class="row">
-                    <div class="col-lg-4">
-                        <img class="" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=="
-                            alt="Generic placeholder image" width="140" height="140">
-                        <h2>Heading</h2>
-                        <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh
-                            ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at
-                            eros. Praesent commodo cursus magna.</p>
-                        <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
-                    </div><!-- /.col-lg-4 -->
-                    <div class="col-lg-4">
-                        <img class="" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=="
-                            alt="Generic placeholder image" width="140" height="140">
-                        <h2>Heading</h2>
-                        <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec
-                            elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus
-                            commodo, tortor mauris condimentum nibh.</p>
+                    <div class="col-md-4">
+                        <img class="article-picture" src="images/HandsomeJack1.jpg" alt="About Pet Pride">
+                        <h3>About Pet Pride</h3>
+                        <p>PET PRIDE, founded in 1965, owns and operates a"NO KILL"and cage-free shelter for the
+                            lifetime care of homeless cats.
 
+                            We welcome visitors to come see our cats living happily in their cage-free"Home for Cats,"
+                            fully furnished for the cats' pleasure and enjoyment.
+                        </p>
+                      <!--  <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>-->
                     </div><!-- /.col-lg-4 -->
-                    <div class="col-lg-4">
-                        <img class="" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=="
-                            alt="Generic placeholder image" width="140" height="140">
-                        <h2>Heading</h2>
-                        <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum
-                            id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor
-                            mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+                    <div class="col-md-4">
+                        <img class="article-picture" src="images/HandsomeJack1.jpg" alt="Generic placeholder image" >
+                        <h3>Programs</h3>
+                        <p>Fostering or adopting a cat.
+                            Become a cat Patron.
+                            Adding us to your will.
+                        </p>
+
+                    </div><!-- /.col-md-4 -->
+                    <div class="col-md-4">
+                        <img class="article-picture" src="images/HandsomeJack1.jpg" alt="Generic placeholder image" >
+                        <h3>Donations</h3>
+                        <p>We are pleased to offer online contributions and hope that you will assist in supporting
+                            us. Please choose one of the options below.
+                            We are a non-profit, tax-deductible organization under IRC Section 501(c)(3). For any
+                            donation of $250.00 or more, we will send you a receipt in compliance with the Internal
+                            Revenue Service requirements.</p>
                     </div><!-- /.col-lg-4 -->
                 </div><!-- /.row -->
             </div><!-- /.container -->
