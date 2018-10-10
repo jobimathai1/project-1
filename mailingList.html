@@ -6,28 +6,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Pet Pride - Mailing List</title>
     <link href="https://fonts.googleapis.com/css?family=Raleway%7CRoboto" rel="stylesheet">
-    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="css/styles.css" />
+    <script src="https://www.gstatic.com/firebasejs/5.5.3/firebase.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous"></script>
 
     <!-- Bootstrap carousel -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="../../../../favicon.ico">
+    <!-- <link rel="icon" href="../../../../favicon.ico"> -->
 
     <!-- Bootstrap core CSS -->
-    <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- <link href="../../dist/css/bootstrap.min.css" rel="stylesheet"> -->
 
     <!-- Custom styles for this template -->
-    <link href="carousel.css" rel="stylesheet">
+    <!-- <link href="carousel.css" rel="stylesheet"> -->
 
 
     <title>Pet Pride</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- <link href="../../dist/css/bootstrap.min.css" rel="stylesheet"> -->
 </head>
 
 <body>
@@ -76,24 +79,6 @@
 
     <!-- Main Body Container -->
     <div class="container">
-        <!-- Mailing List Panel
-    <div class="panel panel-default">
-        <div class="panel-heading panel-custom">
-            Mailing List
-        </div>
-        <table class="table table-hover">
-            <tr>
-                <th scope="col">First Name</th>
-                <th scope="col">Last Name</th>
-                <th scope="col">Email Address</th>
-                <th scrope="col">Confirm Email Address</th>
-                
-            </tr>
-            <tbody id="table-data"></tbody>
-        </table>
-        <hr />
-    </div> -->
-
         <!-- Mailing List Submission Form -->
         <div class="panel panel-default">
             <div class="panel-heading panel-custom">
@@ -117,7 +102,8 @@
 
                     <div class="form-group">
                         <label for="emailAddress">Email Address</label>
-                        <input type="text" class="form-control" placeholder="your_email@something.com" id="emailAddress" required>
+                        <input type="text" class="form-control" placeholder="your_email@something.com" id="emailAddress"
+                            required>
                     </div>
 
                     <div class="btn-group" role="group">
@@ -129,7 +115,8 @@
         </div>
 
     </div>
-
+    <script src="javascript/config.js"></script>
+    <script src="javascript/app.js"></script>
 </body>
 
 </html>
