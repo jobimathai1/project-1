@@ -10,55 +10,87 @@ var config = {
 };
 firebase.initializeApp(config);
 
-var queryURL = "https://us19.api.mailchimp.com/3.0/lists/ba051ccc3c/members/"
+var dataRef = firebase.database();
+var first_name = "";
+var last_name = "";
+var mail_address = "";
+var email_address = "";
 
 
-//Create variables to store what the mailing list form is sending
-var fName = $("#firstName").val().trim();
-var lName = $("#lastName").val().trim();
-var mailAddress = $("#Mailingaddress").val().trim();
-var emailAddress = $("#emailAddress").val().trim();
+$("#btn-add").on("click", function(event){
+  event.preventDefault();
 
+  first_name = $("#firstName").val();
+  last_name = $("#lastName").val();
+  mail_address = $("#mailingAddress").val();
+  email_address = $("#emailAddress").val();
 
-// xhr = new XMLHttpRequest();
-// xhr.open('POST', queryURL, true);
-// xhr.setRequestHeader("Content-Type", "application/json");
-// xhr.setRequestHeader("Authorization", "Basic YW55dXNlcjpmMWVjOWFhNzU2ZTFhYzMzODA1Y2U4NjIyNDRkNWFjYi11czE5");
-// xhr.send({
-//   "email_address":emailAddress,
-//   "status": "subscribed",
-//   "merge_fields": {
-//     "FNAME": fName,
-//     "LNAME": lName,
-//     "ADDRESS": mailAddress
-//   }
+  dataRef.ref().push({
+    first_name: first_name,
+    last_name: last_name,
+    mail_address: mail_address,
+    email_address: email_address,
+    dateAdded: firebase.database.ServerValue.TIMESTAMP
+  });
+});
+
+// dataRef.ref().on("child_added", function(childSnapshot){
+//   console.log()
 // })
 
+// var queryURL = "https://us19.api.mailchimp.com/3.0/lists/ba051ccc3c/members/"
 
-var data = JSON.stringify({
-  // Just testing the API for now. Still need to figure out how to send the data to mailchimp
-  "email_address": "jobi@jobi.com",
-  "status": "subscribed",
-  "merge_fields": {
-    "FNAME": "jobi",
-    "LNAME": "mathai",
-    "ADDRESS": "123 main st",
-    "PHONE": "3102229999",
-  }
-});
 
-var xhr = new XMLHttpRequest();
-xhr.withCredentials = true;
+// //Create variables to store what the mailing list form is sending
+// var fName = $("#firstName").val().trim();
+// var lName = $("#lastName").val().trim();
+// var mailAddress = $("#mailingaddress").val().trim();
+// var emailAddress = $("#emailAddress").val().trim();
 
-xhr.addEventListener("readystatechange", function () {
-  if (this.readyState === 4) {
-    console.log(this.responseText);
-  }
-});
 
-xhr.open("POST", "https://us19.api.mailchimp.com/3.0/lists/ba051ccc3c/members/");
-xhr.setRequestHeader("Content-Type", "application/json");
-xhr.setRequestHeader("cache-control", "no-cache");
-xhr.setRequestHeader("username", "anyuser");
-xhr.setRequestHeader("Postman-Token", "5bfd3b36-9cc7-4a74-ad6e-49e095d2a7b4");
-xhr.send(data);
+// // xhr = new XMLHttpRequest();
+// // xhr.open('POST', queryURL, true);
+// // xhr.setRequestHeader("Content-Type", "application/json");
+// // xhr.setRequestHeader("Authorization", "Basic YW55dXNlcjpmMWVjOWFhNzU2ZTFhYzMzODA1Y2U4NjIyNDRkNWFjYi11czE5");
+// // xhr.send({
+// //   "email_address":emailAddress,
+// //   "status": "subscribed",
+// //   "merge_fields": {
+// //     "FNAME": fName,
+// //     "LNAME": lName,
+// //     "ADDRESS": mailAddress
+// //   }
+// // })
+
+// // On Mailing List submit do the following:
+
+// var data = JSON.stringify({
+//   // Just testing the API for now. Still need to figure out how to send the data to mailchimp
+//   "email_address": "jobi@jobi.com",
+//   "status": "subscribed",
+//   "merge_fields": {
+//     "FNAME": "jobi",
+//     "LNAME": "mathai",
+//     "ADDRESS": "123 main st",
+//     "PHONE": "3102229999",
+//   }
+// });
+
+// var xhr = new XMLHttpRequest();
+// xhr.withCredentials = true;
+
+// xhr.addEventListener("readystatechange", function () {
+//   if (this.readyState === 4) {
+//     console.log(this.responseText);
+//   }
+// });
+
+// xhr.open("POST", "https://us19.api.mailchimp.com/3.0/lists/ba051ccc3c/members/");
+// xhr.setRequestHeader("Content-Type", "application/json");
+// xhr.setRequestHeader("cache-control", "no-cache");
+// xhr.setRequestHeader("username", "anyuser");
+// xhr.setRequestHeader("Postman-Token", "5bfd3b36-9cc7-4a74-ad6e-49e095d2a7b4");
+// xhr.send(data);
+
+
+
