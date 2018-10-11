@@ -41,7 +41,7 @@ body {
     width: 100%;
 }
 
-/* mailing panel header */
+/* start mailingList page */
 .panel-custom  {
     font-family: 'Raleway', sans-serif;
     font-weight: bold;
@@ -54,3 +54,4 @@ body {
 .panel-body {
     border-top: 20px;
 }
+/* end mailingList page */

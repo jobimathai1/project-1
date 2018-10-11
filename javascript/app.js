@@ -20,20 +20,27 @@ var email_address = "";
 $("#btn-add").on("click", function(event){
   event.preventDefault();
 
-  first_name = $("#firstName").val();
-  last_name = $("#lastName").val();
-  mail_address = $("#mailingAddress").val();
-  email_address = $("#emailAddress").val();
+  // Add the values from form fields into the variable
+  first_name = $("#firstName").val().trim();
+  last_name = $("#lastName").val().trim();
+  mail_address = $("#mailingAddress").val().trim();
+  email_address = $("#emailAddress").val().trim();
 
-  dataRef.ref().push({
+  // Push the data from the variables into the firebase db
+  dataRef.ref("subscribers").push({
     first_name: first_name,
     last_name: last_name,
     mail_address: mail_address,
     email_address: email_address,
+    subscriber_status: "1",
     dateAdded: firebase.database.ServerValue.TIMESTAMP
   });
+  // Clear the form fields on submit
+  $("#firstName").val("");
+  $("#lastName").val("");
+  $("#mailingAddress").val("");
+  $("#emailAddress").val("");
 });
-
 // dataRef.ref().on("child_added", function(childSnapshot){
 //   console.log()
 // })
