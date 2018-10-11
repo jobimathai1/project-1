@@ -6,31 +6,35 @@ body {
 }
 
 .logo {
-    padding-right: 50px;
-    width: 150px;
+    padding-right: 0px;
+    width: auto;
 }
 
-.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+.navbar-default .navbar-nav>li>a:hover,
+.navbar-default .navbar-nav>li>a:focus {
     background-color: white;
     color: pink;
     font-display: bold;
 }
 
 .navbar {
-    background: pink;
+    background: lightgray;
+
 }
 
-.btn {
-    border: none;     
+.navbar .navbar-nav {
+    font-size: larger;
 }
 
-.btn a:hover a:focus{
-    background-color: white;
+
+.slide {
+    width: 100%;
 }
 
 .article-picture {
     width: 100%;
 }
+
 
 .container-marketing {
     text-align: justify;
@@ -40,3 +44,26 @@ body {
 .first-slide {
     width: 100%;
 }
+
+/* mailing panel header */
+.panel-custom {
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    border-bottom: 25px;
+}
+
+.form-group,
+.btn {
+    font-family: 'Raleway', sans-serif;
+}
+
+.panel-body {
+    border-top: 20px;
+}
+
+/* donations page */
+.row-donations {
+    text-align: center; 
+}
+
+
