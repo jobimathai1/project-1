@@ -45,7 +45,6 @@ body {
     width: 100%;
 }
 
-<<<<<<< HEAD
 /* mailing panel header */
 .panel-custom {
     font-family: 'Raleway', sans-serif;
@@ -55,22 +54,12 @@ body {
 
 .form-group,
 .btn {
-=======
-/* start mailingList page */
-.panel-custom  {
-    font-family: 'Raleway', sans-serif;
-    font-weight: bold;
-    border-bottom: 25px;   
-}
-.form-group, .btn {
->>>>>>> master
     font-family: 'Raleway', sans-serif;
 }
 
 .panel-body {
     border-top: 20px;
 }
-<<<<<<< HEAD
 
 /* donations page */
 .row-donations {
@@ -78,6 +67,3 @@ body {
 }
 
 
-=======
-/* end mailingList page */
->>>>>>> master
