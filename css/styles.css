@@ -3,6 +3,7 @@
 body {
     /* Typography */
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    color: black;
 }
 
 .logo {
@@ -10,42 +11,43 @@ body {
     width: auto;
 }
 
-.navbar-default .navbar-nav>li>a:hover,
-.navbar-default .navbar-nav>li>a:focus {
-    background-color: white;
-    color: pink;
-    font-display: bold;
-}
-
-.navbar {
+.navbar.navbar-nav {
     background: lightgray;
-
-}
-
-.navbar .navbar-nav {
     font-size: larger;
 }
 
+.active {
+    font-weight: bold;
+}
 
 .slide {
     width: 100%;
+    opacity: 0.80;
+    filter: alpha(opacity=80);
+    /* For IE8 and earlier */
+}
+
+.carousel-caption {
+    color: black;
 }
 
 .article-picture {
     width: 100%;
 }
 
+.center {
+    text-align: center;
+}
 
 .container-marketing {
     text-align: justify;
     padding: 20px;
 }
 
-.first-slide {
-    width: 100%;
-}
 
-<<<<<<< HEAD
+#banner {}
+
+
 /* mailing panel header */
 .panel-custom {
     font-family: 'Raleway', sans-serif;
@@ -53,31 +55,38 @@ body {
     border-bottom: 25px;
 }
 
-.form-group,
-.btn {
-=======
 /* start mailingList page */
-.panel-custom  {
+.panel-custom {
     font-family: 'Raleway', sans-serif;
     font-weight: bold;
-    border-bottom: 25px;   
+    border-bottom: 25px;
 }
-.form-group, .btn {
->>>>>>> master
+
+.form-group .btn {
     font-family: 'Raleway', sans-serif;
 }
 
 .panel-body {
     border-top: 20px;
 }
-<<<<<<< HEAD
+
+/* end mailingList page */
 
 /* donations page */
+
 .row-donations {
-    text-align: center; 
+    text-align: center;
 }
 
+.amznCharityBanner {
+    position: relative;
+    text-align: center;
+    font-weight: bolder;
+}
 
-=======
-/* end mailingList page */
->>>>>>> master
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
