@@ -35,7 +35,7 @@ body {
     width: 100%;
 }
 
-.center {
+.center  {
     text-align: center;
 }
 
@@ -67,9 +67,23 @@ body {
     text-align: center;
 }
 
+
 .amznCharityBanner {
     position: relative;
     text-align: center;
     font-weight: bolder;
 }
 
+/* Centered text */
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*programs page*/
+
+.bottom {
+    text-align: center;
+}
