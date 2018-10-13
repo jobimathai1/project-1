@@ -45,9 +45,6 @@ body {
 }
 
 
-#banner {}
-
-
 /* mailing panel header */
 .panel-custom {
     font-family: 'Raleway', sans-serif;
@@ -55,22 +52,14 @@ body {
     border-bottom: 25px;
 }
 
-/* start mailingList page */
-.panel-custom {
-    font-family: 'Raleway', sans-serif;
-    font-weight: bold;
-    border-bottom: 25px;
-}
-
-.form-group .btn {
+.form-group,
+.btn {
     font-family: 'Raleway', sans-serif;
 }
 
 .panel-body {
     border-top: 20px;
 }
-
-/* end mailingList page */
 
 /* donations page */
 
@@ -84,9 +73,3 @@ body {
     font-weight: bolder;
 }
 
-.centered {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
