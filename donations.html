@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="images/favicon.ico">
     <link rel="stylesheet" type="text/css" media="screen" href="css/styles.css" />
     <script src="https://www.gstatic.com/firebasejs/5.5.3/firebase.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
@@ -32,7 +33,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Pet Pride">
     <meta name="author" content="cat and kitten sanctuary">
-    <link rel="icon" href="images/favicon.ico">
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
@@ -40,8 +40,6 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
 
-
-    <title>Pet Pride</title>
 
 </head>
 
@@ -66,12 +64,12 @@
                         <ul class="navbar-nav mr-auto">
                             <li class="nav-item">
                                 <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a></li>
-                            <li class="navbar-default nav-item">
+                            <li class="nav-item">
                                 <a class="nav-link" href="about.html">About Us</a></li>
                             <li class="nav-item">
                                 <a class="nav-link" href="programs.html">Programs</a></li>
-                            <li class="nav-item">
-                                <a class="nav-link active" href="donations.html">Donations</a></li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="donations.html">Donations</a></li>
                             <li class="nav-item">
                                 <a class="nav-link" href="mailingList.html">Mailing List</a></li>
                         </ul>
@@ -100,18 +98,18 @@
             <div class="row-donations">
                 <br>
                 <h2>Donation Amounts</h2>
-                <p><a class="btn btn-light" href="https://www.paypal.com/webapps/hermes?token=3WH581118P669440N&useraction=commit&mfid=1539401203380_458a0d3198a13" 
-                target="_blank" role="button"> $25 </a>
-                <a class="btn btn-light" href="https://www.paypal.com/webapps/hermes?token=0EC02947V36444737&useraction=commit&mfid=1539401294369_a832a49e6f42b"
-                target="_blank" role="button"> $50 </a>
-                <a class="btn btn-light" href="https://www.paypal.com/webapps/hermes?token=05R76895UK8663455&useraction=commit&mfid=1539401316060_1d6d67ca3cd56"
-                target="_blank" role="button"> $75 </a>
-                <a class="btn btn-light" href="https://www.paypal.com/webapps/hermes?token=07V74504R0263324R&useraction=commit&mfid=1539401745829_25b05d35a8e7"
-                target="_blank" role="button"> $100 </a>
-                <a class="btn btn-light" href="https://www.paypal.com/webapps/hermes?token=16H82423F3140993X&useraction=commit&mfid=1539401362021_4eb512d33ef3f" 
-                target="_blank" role="button"> $250 </a>
-                <a class="btn btn-light" href="#" role="button">Some other amount</a>
-            </p>
+                <p><a class="btn btn-light" href="https://www.paypal.com/webapps/hermes?token=3WH581118P669440N&useraction=commit&mfid=1539401203380_458a0d3198a13"
+                        target="_blank" role="button"> $25 </a>
+                    <a class="btn btn-light" href="https://www.paypal.com/webapps/hermes?token=0EC02947V36444737&useraction=commit&mfid=1539401294369_a832a49e6f42b"
+                        target="_blank" role="button"> $50 </a>
+                    <a class="btn btn-light" href="https://www.paypal.com/webapps/hermes?token=05R76895UK8663455&useraction=commit&mfid=1539401316060_1d6d67ca3cd56"
+                        target="_blank" role="button"> $75 </a>
+                    <a class="btn btn-light" href="https://www.paypal.com/webapps/hermes?token=07V74504R0263324R&useraction=commit&mfid=1539401745829_25b05d35a8e7"
+                        target="_blank" role="button"> $100 </a>
+                    <a class="btn btn-light" href="https://www.paypal.com/webapps/hermes?token=16H82423F3140993X&useraction=commit&mfid=1539401362021_4eb512d33ef3f"
+                        target="_blank" role="button"> $250 </a>
+                    <a class="btn btn-light" href="#" role="button">Some other amount</a>
+                </p>
             </div>
             <br>
             <div>We are pleased to offer online contributions via credit card or PayPal.
@@ -126,30 +124,27 @@
                 </a>
             </div>
             <br>
-            </div>
+        </div>
 
+        <!-- FOOTER -->
 
-            <!-- FOOTER -->
-
-            <footer class="bottom">
-                <button id="donate">Donate Directly</button><br>
-                <tr>
-                    <td><a href="about.html">About |</a></td>
-                    <td><a href="contact.html">Contact |</a></td>
-                    <td><a href="mailingList.html">Mailing List |</a></td>
-                    <td><a href="https://www.goodsearch.org">Donate via GoodSearch |</a></td>
-                    <td><a href="https://smile.amazon.com">Donate via Amazon</a></td>
-                </tr><br>
-                <p>©2018 Pet Pride, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a> · <a href="#">Unsubscribe</a></p>
-                <p class="float-right"><a href="#">Back to top</a></p>
-
-            </footer>
+        <footer class="bottom">
+            <a href="donations.html"> <button id="donate">Donate</button></a>
+            <br>
+            <tr>
+                <td><a href="about.html">About |</a></td>
+                <td><a href="contact.html">Contact |</a></td>
+                <td><a href="mailingList.html">Mailing List |</a></td>
+                <td><a href="https://smile.amazon.com/ch/95-2566053" target="_blank">Use Amazon Smile </a></td>
+            </tr><br>
+            <p>©2018 Pet Pride, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a> · <a href="#">Unsubscribe</a></p>
+            <p class="float-right"><a href="#">Back to top</a></p>
+        </footer>
 
     </main>
 
-    <!-- Bootstrap core JavaScript -->
-    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" -->
-    <!-- crossorigin="anonymous"></script> -->
+    <script src="javascript/config.js"></script>
+    <script src="javascript/app.js"></script>
 
 </body>
 

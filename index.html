@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="images/favicon.ico">
     <link rel="stylesheet" type="text/css" media="screen" href="css/styles.css" />
     <script src="https://www.gstatic.com/firebasejs/5.5.3/firebase.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
@@ -32,7 +33,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Pet Pride">
     <meta name="author" content="cat and kitten sanctuary">
-    <link rel="icon" href="images/favicon.ico">
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
@@ -40,8 +40,6 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
 
-
-    <title>Pet Pride</title>
 
 </head>
 
@@ -66,7 +64,7 @@
                         <ul class="navbar-nav mr-auto">
                             <li class="nav-item active">
                                 <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a></li>
-                            <li class="navbar-default nav-item">
+                            <li class="nav-item">
                                 <a class="nav-link" href="about.html">About Us</a></li>
                             <li class="nav-item">
                                 <a class="nav-link" href="programs.html">Programs</a></li>
@@ -170,9 +168,10 @@
                 <div class="col-md-4">
                     <img class="article-picture" src="images/Rocco2.jpg" alt="Generic placeholder image">
                     <h3>Donations</h3>
-                    <p>We greatly appreciate your support to ensure that the cats we serve will always have a home at our santuary.  
+                    <p>We greatly appreciate your support to ensure that the cats we serve will always have a home at
+                        our santuary.
                         We use PayPal for donations and cat sponsorships.</p>
-                        <p>We are a non-profit, tax-deductible organization under IRC Section 501(c)(3). For any
+                    <p>We are a non-profit, tax-deductible organization under IRC Section 501(c)(3). For any
                         donation of $250.00 or more, we will send you a receipt in compliance with the Internal
                         Revenue Service requirements.</p>
                 </div><!-- /.col-lg-4 -->
@@ -182,7 +181,8 @@
         <!-- FOOTER -->
 
         <footer class="bottom">
-            <button id="donate">Donate Directly</button><br>
+            <a href="donations.html"> <button id="donate">Donate</button></a>
+            <br>
             <tr>
                 <td><a href="about.html">About |</a></td>
                 <td><a href="contact.html">Contact |</a></td>
@@ -195,11 +195,8 @@
         </footer>
 
     </main>
-
-    <!-- Bootstrap core JavaScript -->
-    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" -->
-    <!-- crossorigin="anonymous"></script> -->
-
+    <script src="javascript/config.js"></script>
+    <script src="javascript/app.js"></script>
 </body>
 
 </html>
