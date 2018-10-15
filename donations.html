@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/png" href="images/favicon.ico">
+    <script src="https://www.paypalobjects.com/api/checkout.js"></script>
+    <script src="javascript/paypal.js"></script>
     <link rel="stylesheet" type="text/css" media="screen" href="css/styles.css" />
     <script src="https://www.gstatic.com/firebasejs/5.5.3/firebase.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
@@ -117,6 +119,14 @@
                 donation of $250.00 or more, we will send you a receipt in compliance with the Internal
                 Revenue Service requirements </div>
             <br>
+
+            <!-- Paypal start-->
+
+           
+                <div id="paypal-button-container"></div>
+
+            <!--paypal end-->
+
             <div class="amznCharityBanner">
                 <a href="https://smile.amazon.com/ch/95-2566053" target="_blank">
                     <img src="https://d1ev1rt26nhnwq.cloudfront.net/ccmtblv2.png" alt="Pet Pride Amazon Smile Donations">
@@ -129,15 +139,7 @@
         <!-- FOOTER -->
 
         <footer class="bottom">
-            <a href="donations.html"> <button id="donate">Donate</button></a>
-            <br>
-            <tr>
-                <td><a href="about.html">About |</a></td>
-                <td><a href="contact.html">Contact |</a></td>
-                <td><a href="mailingList.html">Mailing List |</a></td>
-                <td><a href="https://smile.amazon.com/ch/95-2566053" target="_blank">Use Amazon Smile </a></td>
-            </tr><br>
-            <p>©2018 Pet Pride, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a> · <a href="#">Unsubscribe</a></p>
+            <p>©2018 Pet Pride, Inc.</p>
             <p class="float-right"><a href="#">Back to top</a></p>
         </footer>
 
