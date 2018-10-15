@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="css/styles.css" />
+    <link rel="icon" href="images/favicon.ico">
     <script src="https://www.gstatic.com/firebasejs/5.5.3/firebase.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
         crossorigin="anonymous"></script>
@@ -17,9 +18,10 @@
     <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
 </head>
 <body>
+    <!-- Begin NavBar -->
         <nav class="navbar navbar-default navbar-nav navbar-expand-md navbar-light">
-
-                <img class="logo img-fluid" href=index.html src="images/logo.png" alt="Pet Pride" class="d-inline-block align-top"
+<!-- favicon in the upper left -->
+                <img class="logo img-fluid col-md-1" href=index.html src="images/pp4.png" alt="Pet Pride" class="d-inline-block align-top"
                     Bootstrap>
 
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
@@ -42,6 +44,7 @@
                     </ul>
                 </div>
             </nav>
+            <!-- carousel -->
             <div id="myCarousel" class="carousel slide" data-ride="carousel">
                     <ol class="carousel-indicators">
                         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -93,103 +96,32 @@
                         <span class="sr-only">Next</span>
                     </a>
                 </div>
-                <div class="jumbotron text-center">
-                        <h1>About Us</h1>
-                        <p>We love cats, so you can too!</p>
-                        PET PRIDE, founded in 1965, owns and operates a"NO KILL"and cage-free shelter for the lifetime care of homeless cats.</p>
-                            <p>We are located at <address>3350 S. Robertson Blvd, Los Angeles, CA 90034</address>Our hours are 11AM-4PM daily exempting Wednesdays and Sundays.</p> 
-                      </div>
-                        
-                      <div class="container-fluid">
-                        <div class="row">
-                          <div class="col-sm-4">
-                                <h3>Cat Stories</h3>
-                                <p>Read stories about cats, if you write them feel free to add yours!</p>
-                                <p><a href="http://www.petpride.org/4catsake.htm">Cat Stories</a></p>
-                          </div>
-                          <div class="col-sm-4">
-                                <h3>Cat Poetry</h3>        
-                                <p>Cats can't read or write, but they at least <strong>pretend</strong> to listen!</p>
-                                <p>Read the poems out loud, your cat will appreciate it.</p>
-                                <a href="http://www.petpride.org/genpoems.htm">Poems for Cool Cats!</a>
-                          </div>
-                          <div class="col-sm-4">
-                            <h3>Find Us!!</h3>        
-                            <div class="container-fluid"><iframe
-                                width="400"
-                                height="250"
-                                frameborder="0" style="border:0"
-                                src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCmwduomXjt6mWOPHD77O_mQ4GiwzL8nFg
-                                  &q=3350%20S.%20Robertson%20Blvd%2C%20Los%20Angeles%2C%20CA%2090034" allowfullscreen>
-                              </iframe>
-                                </div>
-                          </div>
-                        </div>
-                      </div>
-                      
-            <!-- <div class="row">
-                <div class="col"><article class="history">
-                    <p>PET PRIDE, founded in 1965, owns and operates a"NO KILL"and cage-free shelter for the lifetime care of homeless cats.</p>
-                    <p>We are located at <address>3350 S. Robertson Blvd, Los Angeles, CA 90034</address>Our hours are 11AM-4PM daily exempting Wednesdays and Sundays.</p>
-                    <p>We welcome visitors to come see our cats living happily in their cage-free"Home for Cats," fully furnished for the cats' pleasure and enjoyment.</p>
-                    <p>Our healthy and purring cats are available for adoption to approved homes.Please call us for more information or appointments; our phone number is (310) 836-5427.</p>  
-                </article>
-            </html>div>
-                <div class="col"><article id="catKids">
-                    <h1>Cats Are Kids</h1>
-                        <p>
-                            I think some people are in need of an attitude adjustmentconcerning our companion animals, 
-                            particularly cats and dogs. Scientificstudies have shown that these animals function on the 
-                            intellectual andemotional level of a 3 year-old child, yet people do things to them thatthey 
-                            would never consider doing to their small children. 
-                        </p>
-                        <p>
-                            For example, good parents would never:
-                            Let their child wander the streets unattended with no identification.
-                            Leave their child alone in the backyard, day and night. 
-                            Abandon their child in a strange neighborhood, hoping that some kind personwould take the child in and care for it.
-                            Allow their child to promiscuously have sex with whomever passes by andbecome pregnant.
-                            Fail to teach their child proper manners.
-                            Neglect to provide their child proper medical care.
-                        </p>
-                        <p>
-                            Yet many people think it's perfectly fine to do all of these things to 
-                            their pet dogs and cats. If these creatures are on the same emotional and intellectual 
-                            level of a 3 year-old human child, then adopting a pet isa much more serious step than 
-                            people realize. You are actually becomingthe pet's parent and the pet is not something 
-                            to be tossed aside like astuffed toy if the family tires of the responsibility.
-                        </p>
-                        <p>
-                            Our pets want and deserve to be a part of our family circles. And for thosewho feel that 
-                            the world cannot exist without Fifi or Tom's offspring, considerthis: For every person born, 
-                            15 dogs and 45 cats are also born. So there is no danger we will be in short supply if they 
-                            spay or neuter their pet. Spaying or neutering is your duty and obligation and there are many 
-                            low-costclinics to assist you. Give the gift of life, adopt a homeless cat or dogand learn and 
-                            practice responsible pet ownership. You will get so muchmore than you give. 
-                        </p>
-                </article>
-            <div class="row">
-                <div class="col"><article id="yourCat">
-                    <h1>Was he Yours?</h1>
-                    <p>
-                        I saw a dead cat in the road today. Was he yours? My heart cried. You thought he needed his freedom, you 
-                        think that cats need to roam. You thought he would never leave your yard or jump the fence.You didn't think 
-                        about that teasing bird or squirrel he just had to chase. How long will it be until you know he will never be coming home? 
-                        Will youtry to find him or just assume he found a new home? Will you even grieve? I grieved for him. 
-                        You may never know that he lay there bloody and stillwith all his life violently wrenched from him in an instant. 
-                        You say you cared; then why was he outdoors and unprotected? He gave you his all. Now he has died for you. 
-                        I saw a dead cat in the road today. Was he YOURS?
+                     
 
-                            -DUTCH CARRIE
-                    </p>
-                </article>
-            </div>
-            </div>
-            </div>
-                
-              </div>
-                
-  -->
+
+<!-- 50%/50% split 1/2 cat literature, 1/2 google maps directions API -->
+<div class="container-fluid text-center">
+    <div class="row">
+      <div class="col-6">
+            <h1>About Us</h1>
+            <p>We love cats, so you can too!</p>
+            PET PRIDE, founded in 1965, owns and operates a"NO KILL"and cage-free shelter for the lifetime care of homeless cats.</p>
+                <p>We are located at <address>3350 S. Robertson Blvd, Los Angeles, CA 90034</address>Our hours are 11AM-4PM daily exempting Wednesdays and Sundays.</p> 
+      </div>
+       <!-- Gooogle maps embedded api-->
+      <div class="col-6">
+        <h3 class="text-center">Find Us!!</h3>        
+        <div class="container-fluid text-center">
+            <iframe
+            width="500"
+            height="350"
+            frameborder="0" style="border:0"
+            src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCmwduomXjt6mWOPHD77O_mQ4GiwzL8nFg
+                &q=3350%20S.%20Robertson%20Blvd%2C%20Los%20Angeles%2C%20CA%2090034" allowfullscreen>
+            </iframe>
+      </div>
+    </div>
+  </div>
 
     <footer class="text-center">
         <a href="donations.html"><button id="donate">Donate Directly</button></a><br>
