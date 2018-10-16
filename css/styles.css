@@ -67,10 +67,14 @@ body {
     text-align: center;
 }
 
+
 #paypal-button-container {
-    background-color: blue; /* for visualization purposes */
+    /* background-color: blue; /* for visualization purposes */
 }
 
+#center{
+    text-align: center;
+}
 
 /*amazon smile*/
 .amznCharityBanner {
