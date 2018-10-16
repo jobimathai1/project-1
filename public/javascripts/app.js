@@ -1,7 +1,7 @@
 // Initialize Firebase
 
 var config = {
-  apiKey: config.FB_KEY,
+  apiKey: "AIzaSyAsUe2Y1zOEUnUZERf7I6LGKeKszu0dYDU",
   authDomain: "pet-pride.firebaseapp.com",
   databaseURL: "https://pet-pride.firebaseio.com",
   projectId: "pet-pride",
