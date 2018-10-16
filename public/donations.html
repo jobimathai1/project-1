@@ -6,11 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Pet Pride Donations Page</title>
     <link href="https://fonts.googleapis.com/css?family=Raleway%7CRoboto" rel="stylesheet">
-    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="stylesheets/reset.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/png" href="images/favicon.ico">
-    <link rel="stylesheet" type="text/css" media="screen" href="css/styles.css" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/styles.css" />
     <script src="https://www.gstatic.com/firebasejs/5.5.3/firebase.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
         crossorigin="anonymous"></script>
@@ -93,30 +98,86 @@
                 <img class="article-picture" src="images/HandsomeJack2-narrow.jpg" alt="About Pet Pride">
             </div>
         </div>
+        <br>
+        <h3>Donation Amounts</h3>
+        <div class="row-donations">
+            <div class="container col-md-3">
 
-        <div class="container col-md-8">
-            <div class="row-donations">
-                <br>
-                <h2>Donation Amounts</h2>
-                <p><a class="btn btn-light" href="https://www.paypal.com/webapps/hermes?token=3WH581118P669440N&useraction=commit&mfid=1539401203380_458a0d3198a13"
-                        target="_blank" role="button"> $25 </a>
-                    <a class="btn btn-light" href="https://www.paypal.com/webapps/hermes?token=0EC02947V36444737&useraction=commit&mfid=1539401294369_a832a49e6f42b"
-                        target="_blank" role="button"> $50 </a>
-                    <a class="btn btn-light" href="https://www.paypal.com/webapps/hermes?token=05R76895UK8663455&useraction=commit&mfid=1539401316060_1d6d67ca3cd56"
-                        target="_blank" role="button"> $75 </a>
-                    <a class="btn btn-light" href="https://www.paypal.com/webapps/hermes?token=07V74504R0263324R&useraction=commit&mfid=1539401745829_25b05d35a8e7"
-                        target="_blank" role="button"> $100 </a>
-                    <a class="btn btn-light" href="https://www.paypal.com/webapps/hermes?token=16H82423F3140993X&useraction=commit&mfid=1539401362021_4eb512d33ef3f"
-                        target="_blank" role="button"> $250 </a>
-                    <a class="btn btn-light" href="#" role="button">Some other amount</a>
-                </p>
+                <!--$25-->
+                <div class="donate-button">
+                    <form action="https://secure.paypal.com/cgi-bin/webscr" target="_blank" method="POST">
+                        <input type="hidden" name="cmd" value="_xclick">
+                        <input type="hidden" name="business" value="staff@petpride.org">
+                        <input type="hidden" name="return" value="http://www.petpride.org/thanks.htm">
+                        <input type="hidden" name="item_name" value="General Donation">
+                        <input type="hidden" name="item_number" value="D">
+                        <input type="hidden" name="amount" value="25.00">
+                        <input type="submit" value="$25" name="submit25" alt="Donate $25 to Pet Pride">
+                    </form>
+                </div>
+
+                <!--$50 -->
+                <div class="donate-button">
+                <form action="https://secure.paypal.com/cgi-bin/webscr" target="_blank" method="POST">
+                    <input type="hidden" name="cmd" value="_xclick">
+                    <input type="hidden" name="business" value="staff@petpride.org">
+                    <input type="hidden" name="return" value="http://www.petpride.org/thanks.htm">
+                    <input type="hidden" name="item_name" value="General Donation">
+                    <input type="hidden" name="item_number" value="D">
+                    <input type="hidden" name="amount" value="50.00">
+                    <input type="submit" value="$50" name="submit50" alt="Donate $50 to Pet Pride">
+                </form>
+                </div>
+
+                <!--$75 -->
+                <div class="donate-button">
+                <form action="https://secure.paypal.com/cgi-bin/webscr" target="_blank" method="POST">
+                    <input type="hidden" name="cmd" value="_xclick">
+                    <input type="hidden" name="business" value="staff@petpride.org">
+                    <input type="hidden" name="return" value="http://www.petpride.org/thanks.htm">
+                    <input type="hidden" name="item_name" value="General Donation">
+                    <input type="hidden" name="item_number" value="D">
+                    <input type="hidden" name="amount" value="75.00">
+                    <input type="submit" value="$75" name="submit50" alt="Donate $75 to Pet Pride">
+                </form>
+                </div>
+
+                <!--$100 -->
+                <div class="donate-button">
+                <form action="https://secure.paypal.com/cgi-bin/webscr" target="_blank" method="POST">
+                    <input type="hidden" name="cmd" value="_xclick">
+                    <input type="hidden" name="business" value="staff@petpride.org">
+                    <input type="hidden" name="return" value="http://www.petpride.org/thanks.htm">
+                    <input type="hidden" name="item_name" value="General Donation">
+                    <input type="hidden" name="item_number" value="D">
+                    <input type="hidden" name="amount" value="100.00">
+                    <input type="submit" value="$100" name="submit50" alt="Donate $100 to Pet Pride">
+                </form>
+                </div>
+
+                <!--$250 -->
+                <div class="donate-button">
+                <form action="https://secure.paypal.com/cgi-bin/webscr" target="_blank" method="POST">
+                    <input type="hidden" name="cmd" value="_xclick">
+                    <input type="hidden" name="business" value="staff@petpride.org">
+                    <input type="hidden" name="return" value="http://www.petpride.org/thanks.htm">
+                    <input type="hidden" name="item_name" value="General Donation">
+                    <input type="hidden" name="item_number" value="D">
+                    <input type="hidden" name="amount" value="250.00">
+                    <input type="submit" value="$250" name="submit250" alt="Donate $250 to Pet Pride">
+                </form>
+                </div>
+
+
             </div>
             <br>
-            <div>We are pleased to offer online contributions via credit card or PayPal.
+            <br>
+            <div class="container col-md-6">We are pleased to offer online contributions via credit card or PayPal.
                 We are a non-profit, tax-deductible organization under IRC Section 501(c)(3). For any
                 donation of $250.00 or more, we will send you a receipt in compliance with the Internal
                 Revenue Service requirements </div>
             <br>
+
             <div class="amznCharityBanner">
                 <a href="https://smile.amazon.com/ch/95-2566053" target="_blank">
                     <img src="https://d1ev1rt26nhnwq.cloudfront.net/ccmtblv2.png" alt="Pet Pride Amazon Smile Donations">
@@ -129,22 +190,14 @@
         <!-- FOOTER -->
 
         <footer class="bottom">
-            <a href="donations.html"> <button id="donate">Donate</button></a>
-            <br>
-            <tr>
-                <td><a href="about.html">About |</a></td>
-                <td><a href="contact.html">Contact |</a></td>
-                <td><a href="mailingList.html">Mailing List |</a></td>
-                <td><a href="https://smile.amazon.com/ch/95-2566053" target="_blank">Use Amazon Smile </a></td>
-            </tr><br>
-            <p>©2018 Pet Pride, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a> · <a href="#">Unsubscribe</a></p>
+            <p>©2018 Pet Pride, Inc.</p>
             <p class="float-right"><a href="#">Back to top</a></p>
         </footer>
 
     </main>
 
-    <script src="javascript/config.js"></script>
-    <script src="javascript/app.js"></script>
+    <script src="javascripts/config.js"></script>
+    <script src="javascripts/app.js"></script>
 
 </body>
 
