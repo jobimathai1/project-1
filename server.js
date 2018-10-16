@@ -37,8 +37,14 @@ app.get('/aboutus', function(req, res){
 });
 //end routes setup
 
-app.listen(3000, function(){
-    console.log('server started on port 3000');
+//localhost 
+// app.listen(3000, function(){
+//     console.log('server started on port 3000');
+// });
+
+
+//for Heroku
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+    console.log(`Our app is running on port ${ PORT }`);
 });
-
-
