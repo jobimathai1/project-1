@@ -36,20 +36,26 @@ $("#btn-add").on("click", function(event){
     dateAdded: firebase.database.ServerValue.TIMESTAMP
   });
 
-  var xhr = new XMLHttpRequest();
-  xhr.withCredentials = true;
-  
-  xhr.addEventListener("readystatechange", function () {
-    if (this.readyState === 4) {
-      console.log(this.responseText);
-    }
+  $.ajax({
+    "async": true,
+  "crossDomain": true,
+    url: "https://us19.api.mailchimp.com/3.0/lists/ba051ccc3c/members/",
+    method: "POST",
+    "headers": {
+      "Content-Type": "application/json",
+      username: "anyuser",
+      password: "f1ec9aa756e1ac33805ce862244d5acb-us19"
+    },
+    "data":{email_address: email_address,
+      status: "subscribed",
+      merge_fields: {
+        FNAME: first_name,
+        LNAME: last_name,
+        ADDRESS: mail_address
+      }}
   });
   
-  xhr.open("POST", "https://us19.api.mailchimp.com/3.0/lists/ba051ccc3c/members/");
-  xhr.setRequestHeader("Content-Type", "application/json");
-  xhr.setRequestHeader("cache-control", "no-cache");
-  xhr.setRequestHeader("username", "anyuser");
-  xhr.setRequestHeader("password", "569e7595-c6c7-4510-88b4-dff3fad570fb");
+  
 
   // Clear the form fields on submit
   $("#firstName").val("");
