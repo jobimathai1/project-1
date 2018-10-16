@@ -40,10 +40,12 @@ body {
 }
 
 .container-marketing {
-    text-align: justify;
     padding: 20px;
 }
 
+h3 {
+    text-align: center;
+} 
 
 /* mailing panel header */
 .panel-custom {
