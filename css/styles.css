@@ -2,7 +2,7 @@
 
 body {
     /* Typography */
-    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
     color: black;
 }
 
@@ -35,7 +35,7 @@ body {
     width: 100%;
 }
 
-.center  {
+.center {
     text-align: center;
 }
 
@@ -67,14 +67,18 @@ body {
     text-align: center;
 }
 
+#paypal-button-container {
+    background-color: blue; /* for visualization purposes */
+}
 
+
+/*amazon smile*/
 .amznCharityBanner {
     position: relative;
     text-align: center;
     font-weight: bolder;
 }
 
-/* Centered text */
 .centered {
     position: absolute;
     top: 50%;
