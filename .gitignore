@@ -1,1 +1,5 @@
 config.js
+
+# uncomment the files below before pushing to the repo
+# .DS_Store
+# keys_dev.js
