@@ -43,8 +43,8 @@ $("#btn-add").on("click", function(event){
     method: "POST",
     "headers": {
       "Content-Type": "application/json",
-      username: "anyuser",
-      password: "f1ec9aa756e1ac33805ce862244d5acb-us19"
+      "username": "anyuser",
+      "password": "f1ec9aa756e1ac33805ce862244d5acb-us19"
     },
     "data":{email_address: email_address,
       status: "subscribed",
