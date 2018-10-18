@@ -1,4 +1,4 @@
-# project-1
+PetPride.org
 Project 1
 
 For our first project we decided to tackle an incredibly difficult task, redesigning and updating a website we can only assume was created the last time the San Diego Super Chargers made it to the superbowl.  Petpride.Org was an outdated mess, all pages were built using outdated HTML code. We updated each of the pages to give our client a sample of what a modernized website can do for her.  We revamped the "home", "about us", "programs", "donations", and "mailing list' pages to look like a current day charity website.  
