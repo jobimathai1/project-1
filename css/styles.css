@@ -70,8 +70,6 @@ h3 {
 
 .donate-button {
     text-align: center;
-    padding-left: 5px;
-    padding-inline-start: 5px;
 }
 
 .container {
@@ -96,4 +94,8 @@ h3 {
 
 .bottom {
     text-align: center;
+}
+.back {
+    text-align: right;
+    padding-right: 30px;
 }
