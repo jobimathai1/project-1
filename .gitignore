@@ -2,3 +2,5 @@ config.js
 node_modules
 .vscode-janus-debug
 backfiles.zip
+keys_dev.js
+.DS_Store

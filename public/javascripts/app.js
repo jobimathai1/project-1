@@ -1,7 +1,13 @@
 // Initialize Firebase
+var apiKeys = require('../config/keys/keys');
+
+// remove before pushing up to the repo
+// console.log('**** firebase key', apiKeys.firebaseKey);
+// console.log('**** mailchimp key', apiKeys.mailchimpKey);
 
 var config = {
-  apiKey: "AIzaSyAsUe2Y1zOEUnUZERf7I6LGKeKszu0dYDU",
+  // use line 10 instead
+  apiKey: apiKeys.firebaseKey,
   authDomain: "pet-pride.firebaseapp.com",
   databaseURL: "https://pet-pride.firebaseio.com",
   projectId: "pet-pride",
@@ -54,8 +60,6 @@ $("#btn-add").on("click", function(event){
         ADDRESS: mail_address
       }})
   });
-  
-  
 
   // Clear the form fields on submit
   $("#firstName").val("");
@@ -63,5 +67,3 @@ $("#btn-add").on("click", function(event){
   $("#mailingAddress").val("");
   $("#emailAddress").val("");
 });
-
-
