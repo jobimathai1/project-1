@@ -97,3 +97,7 @@ h3 {
 .bottom {
     text-align: center;
 }
+.back {
+    text-align: right;
+    padding-right: 30px;
+}
