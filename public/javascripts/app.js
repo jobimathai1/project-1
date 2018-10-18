@@ -48,17 +48,17 @@ $("#btn-add").on("click", function(event){
     url: "https://us19.api.mailchimp.com/3.0/lists/ba051ccc3c/members/",
     method: "POST",
     "headers": {
-      contentType: "application/json",
+      "Content-Type": "application/json",
       "username": "anyuser",
-      "password": "f1ec9aa756e1ac33805ce862244d5acb-us19"
+      "password": apiKeys.mailchimpKey
     },
-    "data":JSON.stringify({email_address: email_address,
+    "data":{email_address: email_address,
       status: "subscribed",
       merge_fields: {
         FNAME: first_name,
         LNAME: last_name,
         ADDRESS: mail_address
-      }})
+      }}
   });
 
   // Clear the form fields on submit
