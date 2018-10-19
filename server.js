@@ -41,11 +41,11 @@ app.get('/aboutus', function(req, res){
 });
 //end routes setup
 
-app.use(bodyParser.urlencoded({extended: false}));
+// app.use(bodyParser.urlencoded({extended: false}));
 
-app.post('/mailingList', function(req, res){
+app.post('/mailchimp', function(req, res){
     console.log("this is a test");
-    });
+});
 
 
 //for Heroku
