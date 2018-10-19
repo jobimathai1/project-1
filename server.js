@@ -45,6 +45,7 @@ app.get('/aboutus', function(req, res){
 
 app.post('/mailchimp', function(req, res){
     console.log("this is a test");
+    res.sendFile("public/index.html",{root: __dirname});
 });
 
 
