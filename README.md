@@ -1,3 +1,6 @@
+<<<<<<< HEAD
+From the `javascripts` folder, run `browserify app.js > bundle.js` to save a new bundle
+=======
 PetPride.org
 Project 1
 
@@ -12,3 +15,4 @@ IN the programs page we provided the viewer with information regarding the diffe
 the Donations page provides a space for the view of the webpage to donate directly to the charity in addition to providing a link-button to amazon's smile program where the viewer can choose to contribute to the non-profit for by selection it as a charity.
 
 The mailing list page was also updated using a more modern email api (i.e. MailChimp).  This will allow for viewers to sign up for a mailing list as well as allow the client to better track their "membership".  
+>>>>>>> d3264a1e2c87d28cad6649029b40f3b0524576da

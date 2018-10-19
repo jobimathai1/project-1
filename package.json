@@ -1,0 +1,30 @@
+{
+  "name": "pet-pride",
+  "version": "1.0.0",
+  "engines": {
+    "node": "8.11.3"
+  },
+  "description": "pet-pride site on node & express",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jobimathai1/project-1.git"
+  },
+  "author": "Jobi Mathai",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jobimathai1/project-1/issues"
+  },
+  "homepage": "https://github.com/jobimathai1/project-1#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "jade": "^1.11.0",
+    "mailchimp-api-v3": "^1.12.0",
+    "nodemon": "^1.18.4"
+  }
+}
