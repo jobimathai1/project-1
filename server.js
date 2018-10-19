@@ -3,6 +3,10 @@ var path = require('path');
 var bodyParser = require('body-parser');
 var router = express.Router();
 var app = express();
+var Mailchimp = require('mailchimp-api-v3')
+var jsonParser = bodyParser.json()
+// var apiKeys = require('/config/keys/keys');
+// var mailchimp = new Mailchimp(apiKeys.mailchimpKey)
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended:false}));
@@ -37,10 +41,11 @@ app.get('/aboutus', function(req, res){
 });
 //end routes setup
 
-//localhost 
-// app.listen(3000, function(){
-//     console.log('server started on port 3000');
-// });
+app.use(bodyParser.urlencoded({extended: false}));
+
+app.post('/mailingList', function(req, res){
+    console.log("this is a test");
+    });
 
 
 //for Heroku
@@ -48,3 +53,13 @@ const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
     console.log(`Our app is running on port ${ PORT }`);
 });
+
+// //Mailchimp
+// mailchimp.request({
+//     method:'post',
+//     path: '/lists/ba051ccc3c/members/',
+//     body: {
+//         email_address: 'testaccount-jobi@yahoo.com',
+//         status: 'subscribed',
+//     }
+// })

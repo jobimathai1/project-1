@@ -254,25 +254,6 @@ $("#btn-add").on("click", function(event){
     dateAdded: firebase.database.ServerValue.TIMESTAMP
   });
 
-  $.ajax({
-    "async": true,
-  "crossDomain": true,
-    url: "https://us19.api.mailchimp.com/3.0/lists/ba051ccc3c/members/",
-    method: "POST",
-    "headers": {
-      "Content-Type": "application/json",
-      "username": "anyuser",
-      "password": apiKeys.mailchimpKey
-    },
-    "data":{email_address: email_address,
-      status: "subscribed",
-      merge_fields: {
-        FNAME: first_name,
-        LNAME: last_name,
-        ADDRESS: mail_address
-      }}
-  });
-
   // Clear the form fields on submit
   $("#firstName").val("");
   $("#lastName").val("");

@@ -12,7 +12,6 @@
     <link rel="icon" type="image/png" href="images/favicon.ico">
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/styles.css" />
     <link rel="icon" href="images/favicon.ico">
-    <script src="https://www.gstatic.com/firebasejs/5.5.3/firebase.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
         crossorigin="anonymous"></script>
 
@@ -34,7 +33,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Pet Pride">
     <meta name="author" content="cat and kitten sanctuary">
-    
+
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
@@ -54,18 +53,20 @@
         <div id="container">
             <div id="branding">
 
+
                 <!--Nav-->
                 <nav class="navbar navbar-default navbar-nav navbar-expand-md navbar-light">
-                    <img class="logo img-fluid col-md-1" href=index.html src="images/pp4.png" alt="Pet Pride" class="d-inline-block align-top"
+                    <img class="logo img-fluid" href=index.html src="images/pp4.png" alt="Pet Pride" class="d-inline-block align-top"
                         Bootstrap>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
-                        aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse col-md-8" id="navbarCollapse">
+                    <div class="burger col-auto">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button></div>
+                    <div class="collapse navbar-collapse col-auto" id="navbarCollapse">
                         <ul class="navbar-nav mr-auto">
-                            <li class="nav-item active">
-                                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a></li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="index.html">Home</a></li>
                             <li class="nav-item">
                                 <a class="nav-link" href="about.html">About Us</a></li>
                             <li class="nav-item">
@@ -77,6 +78,8 @@
                         </ul>
                     </div>
                 </nav>
+
+                <!--end nav-->
 
             </div>
         </div>
@@ -111,7 +114,7 @@
                             <h1>Adopt or Sponsor a Cat</h1>
                             <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta
                                 gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                            <p><a class="btn btn-lg btn-primary" href="programs.html" role="button">Learn more</a></p>
+                            <p><a class="btn btn-lg btn-primary" href="programs.html" role="button">Learn More</a></p>
                         </div>
                     </div>
                 </div>
@@ -122,8 +125,7 @@
                             <h1>Ways to Help</h1>
                             <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta
                                 gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                            <p><a class="btn btn-lg btn-primary" href="images/Rocco2.jpg" role="button">Browse
-                                    gallery</a></p>
+                            <p><a class="btn btn-lg btn-primary" href="about.html" role="button">Visit Us</a></p>
                         </div>
                     </div>
                 </div>
@@ -181,13 +183,18 @@
         </div><!-- /.container -->
 
         <!-- FOOTER -->
-
         <footer class="bottom">
-            <p>©2018 Pet Pride, Inc.</p>
-            <p class="float-right"><a href="#">Back to top</a></p>
+            <br>
+            <div class="row">
+                <div class="col-sm"></div>
+                <div class="col-sm">©2018 Pet Pride, Inc.</div>
+                <div class="col-sm back"><a href="#">Back to top</a></div>
+            </div>
+            <br>
         </footer>
 
     </main>
+
 </body>
 
 </html>
