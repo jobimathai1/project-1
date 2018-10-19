@@ -1,0 +1,1 @@
+From the `javascripts` folder, run `browserify app.js > bundle.js` to save a new bundle
