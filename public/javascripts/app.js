@@ -5,6 +5,7 @@ var apiKeys = require('../config/keys/keys');
 // console.log('**** firebase key', apiKeys.firebaseKey);
 // console.log('**** mailchimp key', apiKeys.mailchimpKey);
 
+
 var config = {
   // use line 10 instead
   apiKey: apiKeys.firebaseKey,
