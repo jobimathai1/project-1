@@ -5,8 +5,8 @@ var router = express.Router();
 var app = express();
 var Mailchimp = require('mailchimp-api-v3')
 var jsonParser = bodyParser.json()
-// var apiKeys = require('/config/keys/keys');
-var mailchimp = new Mailchimp('f1ec9aa756e1ac33805ce862244d5acb-us19')
+var apiKeys = require('./public/config/keys/keys');
+var mailchimp = new Mailchimp(apiKeys.mailchimpKey);
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
