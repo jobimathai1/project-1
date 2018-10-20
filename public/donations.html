@@ -4,14 +4,18 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Pet Pride About Us</title>
+    <title>Pet Pride Donations Page</title>
     <link href="https://fonts.googleapis.com/css?family=Raleway%7CRoboto" rel="stylesheet">
     <link rel="stylesheet" href="stylesheets/reset.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/png" href="images/favicon.ico">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/styles.css" />
-    <link rel="icon" href="images/favicon.ico">
+    <script src="https://www.gstatic.com/firebasejs/5.5.3/firebase.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
         crossorigin="anonymous"></script>
 
@@ -28,33 +32,25 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
     </body>
 
-
     <!-- Bootstrap carousel -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Pet Pride">
     <meta name="author" content="cat and kitten sanctuary">
-
-
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
 
-
-
-
 </head>
 
 <body class=" hasGoogleVoiceExt">
-
 
     <header>
 
         <!--Containing global attributes for website layout-->
         <div id="container">
             <div id="branding">
-
 
                 <!--Nav-->
                 <nav class="navbar navbar-default navbar-nav navbar-expand-md navbar-light">
@@ -70,10 +66,10 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="index.html">Home</a></li>
                             <li class="nav-item">
-                                <a class="nav-link active" href="about.html">About Us</a></li>
+                                <a class="nav-link" href="about.html">About Us</a></li>
                             <li class="nav-item">
                                 <a class="nav-link" href="programs.html">Programs</a></li>
-                            <li class="nav-item">
+                            <li class="nav-item active">
                                 <a class="nav-link" href="donations.html">Donations</a></li>
                             <li class="nav-item">
                                 <a class="nav-link" href="mailingList.html">Mailing List</a></li>
@@ -84,98 +80,113 @@
                 <!--end nav-->
             </div>
         </div>
+
     </header>
 
     <!--Main section-->
     <main role="main">
-        <div id="myCarousel" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                <li data-target="#myCarousel" data-slide-to="1" class="active"></li>
-                <li data-target="#myCarousel" data-slide-to="2" class="active"></li>
-            </ol>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img class="first-slide slide" src="images/HandsomeJack2-narrow.jpg" alt="Pet Pride Cat Sanctuary">
-                    <div class="container">
-                        <div class="carousel-caption">
-                            <h1>Our Shelter</h1>
-                            <p>We love cats, so much so, that we have a whole building full of cats you can take home,
-                                so you can fill your apartment with cats!</p>
-                            <p><a class="btn btn-lg btn-primary" href="donations.html" role="button">Donate Now</a></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img class="second-slide slide" src="images/Rocco1.jpg" alt="Pet Pride Cat Sanctuary">
-                    <div class="container">
-                        <div class="carousel-caption">
-                            <h1>Adopt or Sponsor a Cat</h1>
-                            <p>Cats need love, and money. Sadly our revoulutionary Cat Kahkis were not a hit as cats
-                                hate pants but without a wallet, cats can't haz cheezeburger or catnip!
-                                Make a donation today!
-                            </p>
-                            <p><a class="btn btn-lg btn-primary" href="programs.html" role="button">Learn more</a></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img class="third-slide slide" src="images/Rocco2.jpg" alt="Pet Pride Cat Sanctuary">
-                    <div class="container">
-                        <div class="carousel-caption">
-                            <h1>Sign Up for Our Newsletter</h1>
-                            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta
-                                gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                            <p><a class="btn btn-lg btn-primary" href="mailingList.html" role="button">Subscribe</a></p>
-                        </div>
-                    </div>
+
+        <!--Hero-->
+
+        <div class="row">
+            <div class="col-sm-12">
+                <img class="article-picture" src="images/HandsomeJack2-narrow.jpg" alt="About Pet Pride">
+            </div>
+        </div>
+        <br>
+        <h3>Donation Amounts</h3>
+
+        <!--$25-->
+        <div class="row justify-content-center">
+            <div class="col-auto">
+                <div class="donate-button">
+                    <form action="https://secure.paypal.com/cgi-bin/webscr" target="_blank" method="POST">
+                        <input type="hidden" name="cmd" value="_xclick">
+                        <input type="hidden" name="business" value="staff@petpride.org">
+                        <input type="hidden" name="return" value="http://www.petpride.org/thanks.htm">
+                        <input type="hidden" name="item_name" value="General Donation">
+                        <input type="hidden" name="item_number" value="D">
+                        <input type="hidden" name="amount" value="25.00">
+                        <input type="submit" value="$25" name="submit25" alt="Donate $25 to Pet Pride">
+                    </form>
                 </div>
             </div>
 
+            <!--$50 -->
+            <div class="col-auto">
+                <div class="donate-button">
+                    <form action="https://secure.paypal.com/cgi-bin/webscr" target="_blank" method="POST">
+                        <input type="hidden" name="cmd" value="_xclick">
+                        <input type="hidden" name="business" value="staff@petpride.org">
+                        <input type="hidden" name="return" value="http://www.petpride.org/thanks.htm">
+                        <input type="hidden" name="item_name" value="General Donation">
+                        <input type="hidden" name="item_number" value="D">
+                        <input type="hidden" name="amount" value="50.00">
+                        <input type="submit" value="$50" name="submit50" alt="Donate $50 to Pet Pride">
+                    </form>
+                </div>
+            </div>
 
-            <!--Carousel controls-->
-            <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
+            <!--$75 -->
+            <div class="col-auto">
+                <div class="donate-button">
+                    <form action="https://secure.paypal.com/cgi-bin/webscr" target="_blank" method="POST">
+                        <input type="hidden" name="cmd" value="_xclick">
+                        <input type="hidden" name="business" value="staff@petpride.org">
+                        <input type="hidden" name="return" value="http://www.petpride.org/thanks.htm">
+                        <input type="hidden" name="item_name" value="General Donation">
+                        <input type="hidden" name="item_number" value="D">
+                        <input type="hidden" name="amount" value="75.00">
+                        <input type="submit" value="$75" name="submit50" alt="Donate $75 to Pet Pride">
+                    </form>
+                </div>
+            </div>
+
+            <!--$100 -->
+            <div class="col-auto">
+                <div class="donate-button">
+                    <form action="https://secure.paypal.com/cgi-bin/webscr" target="_blank" method="POST">
+                        <input type="hidden" name="cmd" value="_xclick">
+                        <input type="hidden" name="business" value="staff@petpride.org">
+                        <input type="hidden" name="return" value="http://www.petpride.org/thanks.htm">
+                        <input type="hidden" name="item_name" value="General Donation">
+                        <input type="hidden" name="item_number" value="D">
+                        <input type="hidden" name="amount" value="100.00">
+                        <input type="submit" value="$100" name="submit50" alt="Donate $100 to Pet Pride">
+                    </form>
+                </div>
+            </div>
+
+            <!--$250 -->
+            <div class="col-auto">
+                <div class="donate-button">
+                    <form action="https://secure.paypal.com/cgi-bin/webscr" target="_blank" method="POST">
+                        <input type="hidden" name="cmd" value="_xclick">
+                        <input type="hidden" name="business" value="staff@petpride.org">
+                        <input type="hidden" name="return" value="http://www.petpride.org/thanks.htm">
+                        <input type="hidden" name="item_name" value="General Donation">
+                        <input type="hidden" name="item_number" value="D">
+                        <input type="hidden" name="amount" value="250.00">
+                        <input type="submit" value="$250" name="submit250" alt="Donate $250 to Pet Pride">
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <br>
+        <div class="container col-sm-6">We are pleased to offer online contributions via credit card or PayPal.
+            We are a non-profit, tax-deductible organization under IRC Section 501(c)(3). For any
+            donation of $250.00 or more, we will send you a receipt in compliance with the Internal
+            Revenue Service requirements.</div>
+        <br>
+
+        <div class="amznCharityBanner">
+            <a href="https://smile.amazon.com/ch/95-2566053" target="_blank">
+                <img src="https://d1ev1rt26nhnwq.cloudfront.net/ccmtblv2.png" alt="Pet Pride Amazon Smile Donations">
+                <div class="centered">PET PRIDE</div>
             </a>
         </div>
         <br>
-
-
-        <!-- 50%/50% split 1/2 cat literature, 1/2 google maps directions API -->
-        <div class="container-marketing">
-            <div class="row">
-
-                <div class="col-md-6">
-                    <h3>About Us</h3>
-                    <p>We love cats, so you can too! PET PRIDE, founded in 1965, owns and operates a "NO
-                        KILL"and cage-free shelter for the lifetime care of homeless cats. We are located at:
-                        <address>3350 S. Robertson Blvd, Los
-                            Angeles, CA 90034</address>Our hours are 11AM-4PM daily and are closed Wednesdays and
-                        Sundays. Our phone number is (310)
-                        836-5427.</p>
-                </div>
-
-                <!-- Gooogle maps embedded iframe api-->
-                <div class="col-md-6">
-                    <h3>Find Us!!</h3>
-                    <div class="container-fluid text-center">
-                        <iframe width="100%" height="325" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCmwduomXjt6mWOPHD77O_mQ4GiwzL8nFg
-                                    &q=3350%20S.%20Robertson%20Blvd%2C%20Los%20Angeles%2C%20CA%2090034"
-                            allowfullscreen>
-                        </iframe>
-
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
-        </div>
 
         <!-- FOOTER -->
         <footer class="bottom">
@@ -189,6 +200,9 @@
         </footer>
 
     </main>
+
+    <script src="javascript/config.js"></script>
+    <script src="javascript/app.js"></script>
 
 </body>
 
