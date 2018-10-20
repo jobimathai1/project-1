@@ -1,14 +1,9 @@
 // Initialize Firebase
 var apiKeys = require('../config/keys/keys');
 
-// remove before pushing up to the repo
-// console.log('**** firebase key', apiKeys.firebaseKey);
-// console.log('**** mailchimp key', apiKeys.mailchimpKey);
-
-
+//Connect & send data to Firebase
 var config = {
-  // use line 10 instead
-  apiKey: apiKeys.firebaseKey,
+    apiKey: apiKeys.firebaseKey,
   authDomain: "pet-pride.firebaseapp.com",
   databaseURL: "https://pet-pride.firebaseio.com",
   projectId: "pet-pride",

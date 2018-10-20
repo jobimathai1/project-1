@@ -1,81 +1,4 @@
 (function(){function r(e,n,t){function o(i,f){if(!n[i]){if(!e[i]){var c="function"==typeof require&&require;if(!f&&c)return c(i,!0);if(u)return u(i,!0);var a=new Error("Cannot find module '"+i+"'");throw a.code="MODULE_NOT_FOUND",a}var p=n[i]={exports:{}};e[i][0].call(p.exports,function(r){var n=e[i][1][r];return o(n||r)},p,p.exports,r,e,n,t)}return n[i].exports}for(var u="function"==typeof require&&require,i=0;i<t.length;i++)o(t[i]);return o}return r})()({1:[function(require,module,exports){
-(function (process){
-if(process.env.NODE_ENV === 'production'){
-	module.exports = require('./keys_prod');
-} else {
-	module.exports = require('./keys_dev');
-}
-
-}).call(this,require('_process'))
-},{"./keys_dev":2,"./keys_prod":3,"_process":5}],2:[function(require,module,exports){
-module.exports = {
-	firebaseKey: 'AIzaSyAsUe2Y1zOEUnUZERf7I6LGKeKszu0dYDU',
-	mailchimpKey: 'f1ec9aa756e1ac33805ce862244d5acb-us19'
-};
-},{}],3:[function(require,module,exports){
-(function (process){
-// this file will be pushed to the repo. hide your keys in heroku then make sure the
-// naming matches. 
-
-module.exports = {
-	firebaseKey: process.env.FIREBASE_KEY,
-	mailchimpKey: process.env.MAILCHIMP_KEY
-}
-
-}).call(this,require('_process'))
-},{"_process":5}],4:[function(require,module,exports){
-// Initialize Firebase
-var apiKeys = require('../config/keys/keys');
-
-// remove before pushing up to the repo
-// console.log('**** firebase key', apiKeys.firebaseKey);
-// console.log('**** mailchimp key', apiKeys.mailchimpKey);
-
-
-var config = {
-  // use line 10 instead
-  apiKey: apiKeys.firebaseKey,
-  authDomain: "pet-pride.firebaseapp.com",
-  databaseURL: "https://pet-pride.firebaseio.com",
-  projectId: "pet-pride",
-  storageBucket: "",
-  messagingSenderId: "1083593070841"
-};
-firebase.initializeApp(config);
-
-var dataRef = firebase.database();
-var first_name = "";
-var last_name = "";
-var mail_address = "";
-var email_address = "";
-
-
-$("#btn-add").on("click", function(event){
-  event.preventDefault();
-
-  // Add the values from form fields into the variable
-  first_name = $("#firstName").val().trim();
-  last_name = $("#lastName").val().trim();
-  mail_address = $("#mailingAddress").val().trim();
-  email_address = $("#emailAddress").val().trim();
-
-  // Push the data from the variables into the firebase db
-  dataRef.ref("subscribers").push({
-    first_name: first_name,
-    last_name: last_name,
-    mail_address: mail_address,
-    email_address: email_address,
-    subscriber_status: "1",
-    dateAdded: firebase.database.ServerValue.TIMESTAMP
-  });
-  
-  // Clear the form fields on submit
-  $("#firstName").val("");
-  $("#lastName").val("");
-  $("#mailingAddress").val("");
-  $("#emailAddress").val("");
-});
-},{"../config/keys/keys":1}],5:[function(require,module,exports){
 // shim for using process in browser
 var process = module.exports = {};
 
@@ -261,4 +184,76 @@ process.chdir = function (dir) {
 };
 process.umask = function() { return 0; };
 
-},{}]},{},[4]);
+},{}],2:[function(require,module,exports){
+(function (process){
+if(process.env.NODE_ENV === 'production'){
+	module.exports = require('./keys_prod');
+} else {
+	module.exports = require('./keys_dev');
+}
+
+}).call(this,require('_process'))
+},{"./keys_dev":3,"./keys_prod":4,"_process":1}],3:[function(require,module,exports){
+module.exports = {
+    firebaseKey: 'AIzaSyAsUe2Y1zOEUnUZERf7I6LGKeKszu0dYDU',
+    mailchimpKey: 'f1ec9aa756e1ac33805ce862244d5acb-us19'
+};
+},{}],4:[function(require,module,exports){
+(function (process){
+// this file will be pushed to the repo. hide your keys in heroku then make sure the
+// naming matches. 
+
+module.exports = {
+	firebaseKey: process.env.FIREBASE_KEY,
+	mailchimpKey: process.env.MAILCHIMP_KEY
+}
+
+}).call(this,require('_process'))
+},{"_process":1}],5:[function(require,module,exports){
+// Initialize Firebase
+var apiKeys = require('../config/keys/keys');
+
+//Connect & send data to Firebase
+var config = {
+    apiKey: apiKeys.firebaseKey,
+  authDomain: "pet-pride.firebaseapp.com",
+  databaseURL: "https://pet-pride.firebaseio.com",
+  projectId: "pet-pride",
+  storageBucket: "",
+  messagingSenderId: "1083593070841"
+};
+firebase.initializeApp(config);
+
+var dataRef = firebase.database();
+var first_name = "";
+var last_name = "";
+var mail_address = "";
+var email_address = "";
+
+
+$("#btn-add").on("click", function(event){
+  event.preventDefault();
+
+  // Add the values from form fields into the variable
+  first_name = $("#firstName").val().trim();
+  last_name = $("#lastName").val().trim();
+  mail_address = $("#mailingAddress").val().trim();
+  email_address = $("#emailAddress").val().trim();
+
+  // Push the data from the variables into the firebase db
+  dataRef.ref("subscribers").push({
+    first_name: first_name,
+    last_name: last_name,
+    mail_address: mail_address,
+    email_address: email_address,
+    subscriber_status: "1",
+    dateAdded: firebase.database.ServerValue.TIMESTAMP
+  });
+  
+  // Clear the form fields on submit
+  $("#firstName").val("");
+  $("#lastName").val("");
+  $("#mailingAddress").val("");
+  $("#emailAddress").val("");
+});
+},{"../config/keys/keys":2}]},{},[5]);
