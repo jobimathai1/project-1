@@ -195,8 +195,8 @@ if(process.env.NODE_ENV === 'production'){
 }).call(this,require('_process'))
 },{"./keys_dev":3,"./keys_prod":4,"_process":1}],3:[function(require,module,exports){
 module.exports = {
-    firebaseKey: 'AIzaSyAsUe2Y1zOEUnUZERf7I6LGKeKszu0dYDU',
-    mailchimpKey: 'f1ec9aa756e1ac33805ce862244d5acb-us19'
+    firebaseKey: 'AIzaSyAsUe2Y1zOEUnUZERf7I6LGKeKszu0dYDU'
+    // mailchimpKey: 'f1ec9aa756e1ac33805ce862244d5acb-us19'
 };
 },{}],4:[function(require,module,exports){
 (function (process){
