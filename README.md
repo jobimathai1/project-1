@@ -1,5 +1,3 @@
-
-=======
 PetPride.org
 Project 1
 
