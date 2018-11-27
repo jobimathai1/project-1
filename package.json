@@ -22,6 +22,7 @@
   "dependencies": {
     "body-parser": "^1.18.3",
     "ejs": "^2.6.1",
+    "event-stream": "^3.3.4",
     "express": "^4.16.4",
     "jade": "^1.11.0",
     "mailchimp-api-v3": "^1.12.0",
